@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dulcería Don Beto</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Dulcería Don Beto</h1>
+    <p>¡Tus dulces favoritos al alcance de un clic!</p>
+  </header>
+
+  <section class="hero">
+    <h2>¡Bienvenido!</h2>
+    <p>Explora nuestra variedad de dulces y haz tu pedido desde tu celular.</p>
+    <a href="#productos" class="cta-button">Ver productos</a>
+  </section>
+
+  <section id="productos" class="productos">
+    
+    <div class="producto">
+      <img src="paletas.avif" alt="Paletas">
+      <h3>Paletas</h3>
+      
+      <input type="checkbox" id="ver-paletas" class="opciones-toggle">
+      
+      <div class="contenido-producto">
+        
+        <div class="opciones-originales">
+          <p class="precio">$5.00 MXN</p>
+          <label for="ver-paletas" class="boton-ver">Ver</label>
+        </div>
+        
+        <div class="opciones-detalle">
+          <h4>Selecciona sabor:</h4>
+          <p>Fresa 
+            <label for="modal-paletas" class="boton-comprar-sub">Comprar</label>
+          </p>
+          <p>Chile 
+            <label for="modal-paletas" class="boton-comprar-sub">Comprar</label>
+          </p>
+          <p>Sandia 
+            <label for="modal-paletas" class="boton-comprar-sub">Comprar</label>
+          </p>
+          <label for="ver-paletas" class="boton-cerrar-opciones">Cerrar</label>
+        </div>
+      </div>
+    </div>
+    
+    <div class="producto">
+      <img src="gomi.png" alt="Gomitas">
+      <h3>Gomitas</h3>
+      
+      <input type="checkbox" id="ver-gomitas" class="opciones-toggle">
+      
+      <div class="contenido-producto">
+        
+        <div class="opciones-originales">
+          <p class="precio">$10.00 MXN</p>
+          <label for="ver-gomitas" class="boton-ver">Ver</label>
+        </div>
+        
+        <div class="opciones-detalle">
+          <h4>Selecciona tipo:</h4>
+          <p>Panditas 
+            <label for="modal-gomitas" class="boton-comprar-sub">Comprar</label>
+          </p>
+          <p>Tiburones 
+            <label for="modal-gomitas" class="boton-comprar-sub">Comprar</label>
+          </p>
+          <p>Donas 
+            <label for="modal-gomitas" class="boton-comprar-sub">Comprar</label>
+          </p>
+          <label for="ver-gomitas" class="boton-cerrar-opciones">Cerrar</label>
+        </div>
+      </div>
+    </div>
+    
+    <div class="producto">
+      <img src="choco-removebg-preview.png" alt="Chocolates">
+      <h3>Chocolates</h3>
+      
+      <input type="checkbox" id="ver-chocolates" class="opciones-toggle">
+      
+      <div class="contenido-producto">
+        
+        <div class="opciones-originales">
+          <p class="precio">$15.00 MXN</p>
+          <label for="ver-chocolates" class="boton-ver">Ver</label>
+        </div>
+        
+        <div class="opciones-detalle">
+          <h4>Selecciona variedad:</h4>
+          <p>Dulce 
+            <label for="modal-chocolates" class="boton-comprar-sub">Comprar</label>
+          </p>
+          <p>Blanco 
+            <label for="modal-chocolates" class="boton-comprar-sub">Comprar</label>
+          </p>
+          <p>Amargo 
+            <label for="modal-chocolates" class="boton-comprar-sub">Comprar</label>
+          </p>
+          <label for="ver-chocolates" class="boton-cerrar-opciones">Cerrar</label>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contacto">
+    <p>
+      <a href="https://wa.me/5646026823" target="_blank" rel="noopener noreferrer">
+        Haz tu pedido por WhatsApp: 56-46-02-68-23
+      </a>
+    </p>
+    <p>
+      <a href="https://maps.app.goo.gl/Tc4UdjjvvZkD61yw5" target="_blank" rel="noopener noreferrer">
+        Estamos en la escuela, segundo piso
+      </a>
+    </p>
+  </footer>
+
+  <input type="checkbox" id="modal-paletas" class="modal-toggle">
+  <div class="modal-overlay">
+    <div class="modal-contenido">
+      <h3>¡Compra exitosa!</h3>
+      <p>Tu compra está hecha, recoge tu pedido en la Dulcería Don Beto y paga el monto de <strong>$5.00 pesos</strong>.</p>
+      <label for="modal-paletas" class="boton-cerrar">Entendido</label>
+    </div>
+  </div>
+
+  <input type="checkbox" id="modal-gomitas" class="modal-toggle">
+  <div class="modal-overlay">
+    <div class="modal-contenido">
+      <h3>¡Compra exitosa!</h3>
+      <p>Tu compra está hecha, recoge tu pedido en la Dulcería Don Beto y paga el monto de <strong>$10.00 pesos</strong>.</p>
+      <label for="modal-gomitas" class="boton-cerrar">Entendido</label>
+    </div>
+  </div>
+
+  <input type="checkbox" id="modal-chocolates" class="modal-toggle">
+  <div class="modal-overlay">
+    <div class="modal-contenido">
+      <h3>¡Compra exitosa!</h3>
+      <p>Tu compra está hecha, recoge tu pedido en la Dulcería Don Beto y paga el monto de <strong>$15.00 pesos</strong>.</p>
+      <label for="modal-chocolates" class="boton-cerrar">Entendido</label>
+    </div>
+  </div>
+
+</body>
+</html>
